@@ -1,3 +1,4 @@
-<p
-    echo "Data atual".date('d/m/y');
+<?php
+
+echo "Data:".date('d/m/Y H:i:s');
 ?>
