@@ -1,9 +1,10 @@
 <?php
 $num=0;
-   while($num<100){
+   while($num2<100){
        $num++;
+       $soma=$num+$;
     if($num%2==0){
-        echo $num;
+        echo $num2. "<br>";
     }
 
    }
