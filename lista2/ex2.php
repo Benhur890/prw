@@ -13,6 +13,7 @@ switch($mes){
     case '10':echo "Outubro";break;
     case '11':echo "Novembro";break;
     case '12':echo "Dezembro";break;
+    default: echo "Mês inválido";break;
 
 }
 ?>
