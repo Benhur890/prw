@@ -7,7 +7,7 @@ echo "Caixa de seleção: ". $_GET["checkbox"]. "<br>";
 
 
 echo "Botão de opção: ". $_GET["radio"]. "<br>";
-
-echo "Menu Suspenso: ". $_GET["lista"]. "<br>";
+$lista = isset($_GET['lista']) ? $valor=$_GET['lista']: 0;
+echo "Menu Suspenso: ". $lista. "<br>";
 
 ?>
