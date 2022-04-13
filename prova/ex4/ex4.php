@@ -21,7 +21,7 @@ echo "Total da compra: ".$total."<br><br><br>";
     if($nome==""){
         echo "O nome não pode estar vazio!";
         if($id=="" || $idrg ==""){
-            echo "<br>A identificação não pode ser nula!";-*
+            echo "<br>A identificação não pode ser nula!";
             
         }
     }
