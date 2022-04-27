@@ -2,10 +2,8 @@
     include('conexao.php');
     $sql = "SELECT * FROM usuarios";
     // retorna todos os dados da consulta
-    $result = mysql_query($con, $sql);
-    // resulta a primeira linha
-    $row = mysql_fetch_array($result);
-    print_r($row);
+    $result = mysqli_query($con, $sql);
+ 
 
 ?>
  <!DOCTYPE html>
@@ -19,14 +17,19 @@
      <h1>Listagem de usuários</h1>
      <table border="1" align="center" widht=500>
          <tr>
-             <th></th>
-             <th></th>
-             <th></th>
-             <th></th>
+             <th>Código</th>
+             <th>Nome</th>
+             <th>Email</th>
+             <th>Telefone</th>
          </tr>
          <?php
-            while(mysqli_fetch_array($result)){
-                
+            while($row= mysqli_fetch_array($result)){
+                echo "<tr>";
+                echo "<td>".$row['id_usuario'] ."</td>";
+                echo "<td>".$row['nome_usuario'] ."</td>";
+                echo "<td>".$row['email_usuario'] ."</td>";
+                echo "<td>".$row['telefone_usuario'] ."</td>";
+                echo "</tr>";
             }
          
          
