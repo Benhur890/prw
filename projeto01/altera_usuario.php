@@ -49,7 +49,8 @@
         <br>
 
         <button type="submit">Enviar</button>
-    </fieldset>
+        <input name ="id_usuario" type="hidden" value="<?php echo $row ['id_usuario']?>">
+        </fieldset>
 
     </form>
 </body>
