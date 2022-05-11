@@ -26,7 +26,7 @@
     <fieldset>
     <legend><h1> Alteração de Usuário </h1></legend>
 
-    <form action="cadastro_usuario.php" method="GET">
+    <form method = "post" action="altera_usuario_exe.php">
     
         <div>
             <label for="">Nome: </label>
