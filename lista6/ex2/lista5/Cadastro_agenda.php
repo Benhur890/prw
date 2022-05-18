@@ -3,6 +3,7 @@
 include("conexao.php");
 
 $nome = $_GET['nome'];
+$apelido = $_GET['apelido'];
 $email = $_GET['email'];
 $tel = $_GET['tel'];
 $endereco = $_GET['endereco'];
@@ -15,6 +16,7 @@ $celular = $_GET['celular'];
 
 
 echo "<br>Nome: ".$nome;
+echo "<br>Apelido: ".$apelido;
 echo "<br>E-mail: ".$email;
 echo "<br>Telefone: ".$tel;
 echo "<br>Endereço: ".$endereco;
@@ -24,8 +26,8 @@ echo "<br>Estado: ".$estado;
 echo "<br>Celular: ".$celular;
 
 
-$sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, endereco_usuario, bairro_usuario, cidade_usuario, estado_usuario, celular_usuario)
-         VALUES ('".$nome."','".$email."','".$tel."','".$endereco."','".$bairro."','".$cidade."','".$estado."','".$celular."')";
+$sql = "INSERT INTO agenda (nome, apelido,email, telefone, endereco, bairro, cidade, estado, celular)
+         VALUES ('".$nome."','".$apelido."','".$email."','".$tel."','".$endereco."','".$bairro."','".$cidade."','".$estado."','".$celular."')";
 
 $result = mysqli_query($con, $sql);
 if($result)
