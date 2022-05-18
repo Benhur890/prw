@@ -1,3 +1,7 @@
+create database lista;
+
+use lista;
+
 create table agenda(
     id_agenda int not null auto_increment,
     nome varchar(50) not null,

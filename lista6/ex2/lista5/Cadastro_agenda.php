@@ -17,9 +17,15 @@ $celular = $_GET['celular'];
 echo "<br>Nome: ".$nome;
 echo "<br>E-mail: ".$email;
 echo "<br>Telefone: ".$tel;
+echo "<br>Endereço: ".$endereco;
+echo "<br>Bairro: ".$bairro;
+echo "<br>Cidade: ".$cidade;
+echo "<br>Estado: ".$estado;
+echo "<br>Celular: ".$celular;
+
 
 $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, endereco_usuario, bairro_usuario, cidade_usuario, estado_usuario, celular_usuario)
-         VALUES ('".$nome."','".$email."','".$tel."','".$endereco."','".$bairro."','".$cidade."')";
+         VALUES ('".$nome."','".$email."','".$tel."','".$endereco."','".$bairro."','".$cidade."','".$estado."','".$celular."')";
 
 $result = mysqli_query($con, $sql);
 if($result)
