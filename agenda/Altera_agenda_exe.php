@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');
+    include('Conexao.php');
      // Upload da foto     
   $fotoNome = $_FILES['foto']['name'];
   $target_dir = "uploud/";
@@ -51,7 +51,7 @@
                             bairro='".$bairro."',
                             cidade='".$cidade."',
                             estado='".$estado."',
-                            celular='".$celular."'
+                            celular='".$celular."',
                             foto_blob='".$fotoBlob."',
                             foto_nome='".$fotoNome."'
                             WHERE id_agenda=".$id_agenda;
