@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+
+<body>
+    <fieldset>
+    <legend><h1> Cadastro de Valores - IFSP</h1></legend>
+    <form action="Cadastro_fluxo_caixa.php" method="POST" enctype="multipart/form-data">
+    
+        <div >
+            <label for="">Data: </label>
+            <input type="date" name="data">
+        </div>
+          <div >
+            <label for="">Tipo: </label>
+            <input type="radio" name="radio1" value="Entrada"> Entrada 
+            <input type="radio" name="radio1" value="Saida"> Saída <br>
+
+        </div>
+        <br>
+        <div>
+            <label for="">Valor: </label>
+            <input type="decimal" name="valor">
+        </div>
+        <div>
+            <label for="">Histórico: </label>
+            <input type="text" name="historico">
+        </div>
+        <div>
+            <label for="Cheque">Cheque: </label>
+            <select name="cheque" value="valordefault">
+            <option value="Sim">Sim</option>
+            <option value="Nao">Não</option>
+
+        </div>
+        <input type="submit"  value="enviar">
+
+    </fieldset>
+
+    </form>
+</body>
+
+
+</html>

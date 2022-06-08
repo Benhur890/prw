@@ -50,7 +50,7 @@
                             endereco='".$endereco."',
                             bairro='".$bairro."',
                             cidade='".$cidade."',
-                            estado='".$estado."',
+                             estado='".$estado."',
                             celular='".$celular."',
                             foto_blob='".$fotoBlob."',
                             foto_nome='".$fotoNome."'
@@ -59,7 +59,7 @@
                   else
                   {
                     $sql = "UPDATE agenda SET
-                               nome='".$nome."',
+                        nome='".$nome."',
                         email='".$email."',
                         telefone='".$tel."',
                         apelido='".$apelido."',
