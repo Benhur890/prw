@@ -37,8 +37,8 @@
         <br>
         <div>
             <label for="">Tipo: </label>
-            <input type="radio" name="radio1" value="Entrada"> Entrada 
-            <input type="radio" name="radio1" value="Saida"> Saída <br>
+            <input type="radio" name="tipo" value="Entrada"> Entrada 
+            <input type="radio" name="tipo" value="Saida"> Saída <br>
         </div>
         <br>
         <div>
@@ -58,9 +58,11 @@
             <option value="Nao">Não</option
             value="<?php echo $row['cheque'] ?>" placeholder="Cheque":>>
         </div>
-
         <br>
+
         <input type="submit">Enviar</input>
+        <input name ="id" type="hidden" value="<?php echo $row ['id']?>">
+
         </fieldset>
 
     </form>

@@ -1,3 +1,4 @@
+create database Prova2;
 use Prova2;
 DROP TABLE IF EXISTS fluxo_caixa;
 create table fluxo_caixa (

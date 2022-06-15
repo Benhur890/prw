@@ -3,7 +3,7 @@
 include("conexao.php");
 
     $data = $_POST['data'];
-    $tipo = $_POST['radio1'];
+    $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
     $historico = $_POST['historico'];
     $cheque = $_POST['cheque'];

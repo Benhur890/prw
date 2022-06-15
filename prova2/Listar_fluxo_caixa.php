@@ -32,7 +32,6 @@
                 echo "<td>".$row['tipo'] ."</td>";
                 echo "<td>".$row['valor'] ."</td>";
                 echo "<td><a href='Altera_fluxo_caixa.php?id=".$row['id']."'>'".$row['historico']. "</a></td>";
-                echo "<td>".$row['historico'] ."</td>";
                 echo "<td>".$row['cheque'] ."</td>";
                 echo "<td><a href='Excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a></td>";
                 echo "</tr>";
